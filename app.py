@@ -1,8 +1,8 @@
-from smartStore import db, app
+import db, app
 from flask import render_template, redirect, request, url_for, abort, session, flash
 from flask_login import login_user,login_required, logout_user
-from smartStore.models import User, Admin, Products
-from smartStore.forms import LoginForm, RegistrationForm, AdminLoginForm,AddProductForm, SearchProductForm
+from models import User, Admin, Products
+from forms import LoginForm, RegistrationForm, AdminLoginForm,AddProductForm, SearchProductForm
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy import func
 
